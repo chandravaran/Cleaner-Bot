@@ -1,7 +1,10 @@
 # Cleaner-Bot
 
 ### This repository contains the CAD models, DXF files used for laser cutting, followed by the code used to control the robot. 
-The projects am was to design and implement a new design as an alternative to the currently existing cleaner robots. 
+### The projects aim was to design and implement a new design as an alternative to the currently existing cleaner robots. 
+
+### For prezi presentation click [here](https://prezi.com/view/AhR2JavvCEbZ34JITC9l/)
+### Youtube video [Link](https://youtu.be/4qz2bjRoqZo)
 
 ## Table of Contents
 1. [Design Phases](#Design-Phases)

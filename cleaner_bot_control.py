@@ -100,7 +100,7 @@ class CleanerBotControl:
         r: Fan on
         t: Fan on
 
-        CTRL-C to quit
+        e: to quit
         ---------------------------
         """
 

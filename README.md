@@ -10,12 +10,13 @@ Youtube video [Link](https://youtu.be/4qz2bjRoqZo)
 2. [Simulation](#simulation)
 3. [Laser Cutting Images](#laser-cut-images)
 4. [Assembly](#assembly)
+5. [Robot Control](#robot-control)
 
 
 ## Design Phases
 This section we will discuss about the different stages the robot design process went through.
 
-## Design 1
+### Design 1
 <img src="media/monica_1.png"  width="400" height="400" />
 
 
@@ -23,13 +24,13 @@ The above picture is the initial design for the cleaner robot. It accomplished o
 
 
 
-## Design 2 
+### Design 2 
 <img src="media/monica_2_pic-1.png"  width="400" height="400" />  <img src="media/monica_2_pic-2.PNG"  width="400" height="400" />
 
 
 Keeping in mind the drawbacks of the previous model, we added a vacuum chamber, and the electronics were moved from the front to the back. But there was a considerable drawback of this design, including the electronics at the back made the robot long, which includes the arms in closed form. Also, we concluded that the linearly actuated front bin was taking up too much space and would be very hard to manufacture, as 3D-printed gears would have difficulty meshing if not made properly. Thus the final design came into existence.
 
-## Design 3 
+### Design 3 
 <img src="media/monica_3_f.PNG"  width="400" height="400" />
 
 The above picture represents a minimalistic design. It includes all the main components we wanted. The front bin was removed, and a flap-like structure was made. The arms were changed so they could come as close to the body as possible. This design was finalized for manufacturing.
@@ -66,3 +67,30 @@ These 2 images are the front and top view of the final robot with electronics. A
 
 This is the back picture of the robot. There is a motor driver, a Lipo, RPi, and a trigger switch. We initially thought of using an Arduino nano, but there were not enough pins, and the RPi allows us to control the robot using SSH.   
 
+## Robot Control
+
+This code allows us teleoperation control of cleaner bot.
+The input is a keyboard press, with the following options
+
+
+Moving around:<br/>
+<p>u &emsp; i &emsp; o</p>
+<p>j &emsp; k &emsp; l</p>
+<p>m &emsp; , &emsp; .</p>
+
+1 : Low <br/>
+2 : Medium<br/>
+3 : High<br/>
+
+c: Closing the front arms<br/>
+v: Opening the front arms<br/>
+
+d: Closing the front flap<br/>
+f: opening the front flap<br/>
+
+r: Fan on<br/>
+t: Fan on<br/>
+
+e: to quit<br/>
+
+This is printed in the terminal so we don't have to remember the commands.
